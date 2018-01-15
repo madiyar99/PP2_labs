@@ -12,14 +12,14 @@ namespace Example5
         public int age;
         public float gpa;
 
-        public Student() //Создаем конструктор без значений
+        public Student() //Создаем конструктор без аргументов, но с начальными значениями
         {
             name = "Madiyar";
             age = 18;
             gpa = 4;
         }
 
-        public Student(string n, int a, float g) //Создаем конструктор со значениями
+        public Student(string n, int a, float g) //Создаем конструктор с аргументами
         {
             name = n;
             age = a;
