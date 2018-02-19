@@ -41,6 +41,7 @@ namespace ConsoleApp1
             int cursor = 0;
             int n = directoryInfo.GetFileSystemInfos().Length;
             ShowDirectoryInfo(directoryInfo, cursor);
+            Console.CursorVisible = false;
 
             while (true)
             {

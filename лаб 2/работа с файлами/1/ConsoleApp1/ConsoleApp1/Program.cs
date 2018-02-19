@@ -31,6 +31,9 @@ namespace ConsoleApp1
 
             Console.WriteLine(max + " " + min);
 
+            StreamWriter write = new StreamWriter(@"C:\Users\Asus\Desktop\PP2_labs_local\лаб 2\работа с файлами\1\file2.txt");
+            write.WriteLine(max + " " + min);
+            write.Close();
             Console.ReadLine();
         }
     }
