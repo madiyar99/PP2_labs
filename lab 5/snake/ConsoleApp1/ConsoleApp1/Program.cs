@@ -13,7 +13,7 @@ namespace ConsoleApp1
             int level = 1;
             Snake snake = new Snake();
             Wall wall = new Wall(level);
-
+            
             while (true)
             {
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -49,8 +49,16 @@ namespace ConsoleApp1
                 }
 
                 Console.Clear();
-                snake.Draw();
                 wall.Draw();
+                snake.Draw();
+                Console.CursorVisible = false;
+
+                if (snake.golovaX == wall.tempX && snake.golovaY == wall.tempY)
+                {
+                    wall.result += 10;
+                    Console.SetCursorPosition(wall.tempX, wall.tempY);
+                    Console.Write('*');
+                }
             }
         }
     }

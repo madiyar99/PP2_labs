@@ -8,14 +8,17 @@ namespace ConsoleApp1
 {
     class Snake
     {
+        Wall wall1 = new Wall();
         List<Point> body;
         string sign;
         ConsoleColor color;
         public int cnt;
+        public int result;
+        public int golovaX, golovaY;
         public Snake()
         {
             body = new List<Point>();
-            body.Add(new Point(10, 10));
+            body.Add(new Point(5, 5));
             sign = "*";
             color = ConsoleColor.Yellow;
             cnt = 0;
@@ -36,6 +39,9 @@ namespace ConsoleApp1
             }
             body[0].x += dx;
             body[0].y += dy;
+
+            golovaX = body[0].x;
+            golovaY = body[0].y;
 
             if (body[0].x < 1)
                 body[0].x = Console.WindowWidth - 1;
@@ -61,6 +67,8 @@ namespace ConsoleApp1
                 Console.Write(sign);
                 index++;
             }
+
+            
         }
 
         public bool CollisionWithWall(Wall w)
@@ -82,6 +90,8 @@ namespace ConsoleApp1
             }
             return false;
         }
+
+        
 
     }
 }

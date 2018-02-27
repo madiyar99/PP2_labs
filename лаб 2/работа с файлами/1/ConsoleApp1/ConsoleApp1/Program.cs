@@ -14,6 +14,7 @@ namespace ConsoleApp1
             FileStream file1 = new FileStream(@"C:\Users\Asus\Desktop\PP2_labs_local\лаб 2\работа с файлами\1\file.txt", FileMode.Open); //создаем файловый поток
             StreamReader reader = new StreamReader(file1); // создаем «потоковый читатель» и связываем его с файловым потоком 
             string s = reader.ReadToEnd(); //считываем все данные с потока и записываем в переменную s
+           
             Console.WriteLine(s);
             reader.Close(); //закрываем поток
             string[] arr = s.Split(' ');

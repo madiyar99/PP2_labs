@@ -13,6 +13,6 @@ namespace ConsoleApp1
         {
             x = _x;
             y = _y;
-        }
+        } 
     }
 }
