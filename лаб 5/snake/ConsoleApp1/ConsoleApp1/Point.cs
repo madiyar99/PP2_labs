@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
-{
+{ 
     class Point
     {
         public int x, y;

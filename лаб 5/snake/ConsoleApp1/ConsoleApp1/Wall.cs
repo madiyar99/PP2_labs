@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 namespace ConsoleApp1
-{
+{ 
     class Wall
     {
         public List<Point> body;

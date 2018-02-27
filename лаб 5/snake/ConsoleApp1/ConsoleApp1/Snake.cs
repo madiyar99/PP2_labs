@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
-{
+{ 
     class Snake
     {
         Wall wall1 = new Wall();
