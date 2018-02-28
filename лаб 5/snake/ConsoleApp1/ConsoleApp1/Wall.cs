@@ -68,6 +68,10 @@ namespace ConsoleApp1
                 Console.SetCursorPosition(p.x, p.y);
                 Console.Write(sign);
             }
+
+            Console.SetCursorPosition(0, 20);
+            Console.WriteLine("Result = " + result);
+
             Console.SetCursorPosition(tempX, tempY);
             Console.Write("@");
         }

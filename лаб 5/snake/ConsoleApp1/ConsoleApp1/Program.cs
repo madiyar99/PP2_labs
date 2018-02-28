@@ -74,6 +74,11 @@ namespace ConsoleApp1
                     level++;
                     wall = new Wall(level);
                 }
+
+                if(snake.golovaX == wall.tempX && snake.golovaY == wall.tempY)
+                {
+                    wall.result += 10;
+                }
             }
         }
     }
