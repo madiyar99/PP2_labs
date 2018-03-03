@@ -15,6 +15,8 @@ namespace ConsoleApp1
         public int cnt;
         public int result;
         public int golovaX, golovaY;
+        public int tailX, tailY, tail1X, tail1Y; 
+
         public Snake()
         {
             body = new List<Point>();
@@ -37,11 +39,21 @@ namespace ConsoleApp1
                 body[i].x = body[i - 1].x;
                 body[i].y = body[i - 1].y;
             }
-            body[0].x += dx;
-            body[0].y += dy;
+
+            if (body.Count == 1)
+            {
+                tail1X = body[0].x;
+                tail1Y = body[0].y;
+            }
 
             golovaX = body[0].x;
             golovaY = body[0].y;
+
+            body[0].x += dx;
+            body[0].y += dy;
+
+            tailX = body[body.Count - 1].x;
+            tailY = body[body.Count - 1].y;            
 
             if (body[0].x < 1)
                 body[0].x = Console.WindowWidth - 1;
@@ -56,6 +68,7 @@ namespace ConsoleApp1
 
         public void Draw()
         {
+
             int index = 0;
             foreach (Point p in body)
             {
@@ -68,7 +81,18 @@ namespace ConsoleApp1
                 index++;
             }
 
-            
+            if (body.Count != 1)
+            {
+                Console.SetCursorPosition(tailX, tailY);
+                Console.Write(" ");
+            }
+
+            else if(body.Count == 1)
+            {
+                Console.SetCursorPosition(tail1X, tail1Y);
+                Console.Write(" ");
+            }
+
         }
 
         public bool CollisionWithWall(Wall w)

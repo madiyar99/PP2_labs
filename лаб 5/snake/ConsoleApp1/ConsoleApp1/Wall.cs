@@ -12,13 +12,10 @@ namespace ConsoleApp1
         public List<Point> body;
         public string sign;
         public ConsoleColor color;
-        public Random rand = new Random();
-        public int tempX, tempY, result = 0;
-        public bool proverka = false;
-
+         
         public void ReadLevel(int level)
         {
-            StreamReader sr = new StreamReader(@"C:\Users\Asus\Desktop\PP2_labs_local\lab 5\snake\level" + level + ".txt");
+            StreamReader sr = new StreamReader(@"C:\Users\Asus\Desktop\PP2_labs_local\лаб 5\snake\level" + level + ".txt");
             int n = int.Parse(sr.ReadLine());
             for (int i = 0; i < n; i++)
             {
@@ -28,26 +25,6 @@ namespace ConsoleApp1
                         body.Add(new Point(j, i));
             }
             sr.Close();
-
-            while (true)
-            {
-                tempX = rand.Next(2, 17);
-                tempY = rand.Next(5, 17);
-                StreamReader br = new StreamReader(@"C:\Users\Asus\Desktop\PP2_labs_local\lab 5\snake\level" + level + ".txt");
-                int k = int.Parse(br.ReadLine());
-                for (int i = 0; i < k; i++)
-                {
-                    string s1 = br.ReadLine();
-                    if (tempX == i && s1[tempY] != '*')
-                    {
-                        br.Close();
-                        proverka = false;
-                        break;                   
-                    }
-                }
-                if (proverka == false) break;
-            }
-            proverka = true;
         }
 
         public Wall(){}
@@ -68,12 +45,6 @@ namespace ConsoleApp1
                 Console.SetCursorPosition(p.x, p.y);
                 Console.Write(sign);
             }
-
-            Console.SetCursorPosition(0, 20);
-            Console.WriteLine("Result = " + result);
-
-            Console.SetCursorPosition(tempX, tempY);
-            Console.Write("@");
         }
     }
 }

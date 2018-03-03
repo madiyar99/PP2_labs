@@ -13,11 +13,17 @@ namespace ConsoleApp1
         static int level = 1;
         static Snake snake = new Snake();
         static Wall wall = new Wall(1);
+        static Food food1 = new Food(level);
+
+        
         static int speed = 400;
+       
         public static void func()
         {
+       
             while (true)
             {
+
                 if (direction == 3)
                     snake.Move(0, 1);
                 if (direction == 4)
@@ -26,22 +32,50 @@ namespace ConsoleApp1
                     snake.Move(-1, 0);
                 if (direction == 1)
                     snake.Move(1, 0);
-                Console.Clear();
+
+                if (snake.CollisionWithWall(wall) || snake.Collision())
+                {
+                    Console.Clear();
+                    Console.SetCursorPosition(53, 10);
+                    Console.WriteLine("GAME OVER!!!!");
+                    Console.ReadKey();
+                    Console.Clear();
+                    snake = new Snake();
+                    level = 1;
+                    wall = new Wall(level);
+                    Food food1 = new Food(level);
+                    speed = 400;
+                    food1.result = 0;
+                }
+
+                if (snake.golovaX == food1.tempX && snake.golovaY == food1.tempY)
+                {
+                    food1.result += 10;
+                    food1.food(level);
+                }
+
                 snake.Draw();
                 wall.Draw();
-                if (snake.cnt % 20 == 0)
+                food1.Draw();
+               
+                if (snake.cnt % 50 == 0)
                     speed = Math.Max(1, speed - 100);
                 Thread.Sleep(speed);
+
             }
         }
 
         static void Main(string[] args)
         {
+           
             Thread thread = new Thread(func);
             thread.Start();
 
+            Console.CursorVisible = false;
+
             while (true)
             {
+
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
                 if (keyInfo.Key == ConsoleKey.DownArrow && direction != 4)
                     direction = 3;
@@ -54,32 +88,23 @@ namespace ConsoleApp1
 
                 if (keyInfo.Key == ConsoleKey.R)
                 {
+                    Console.Clear();
                     level = 1;
                     snake = new Snake();
                     wall = new Wall(level);
+                    Food food1 = new Food(level);
+                    
                 }
 
-                if (snake.CollisionWithWall(wall) || snake.Collision())
-                {
-                    Console.Clear();
-                    Console.SetCursorPosition(5, 5);
-                    Console.WriteLine("GAME OVER!!!!");
-                    Console.ReadKey();
-                    snake = new Snake();
-                    level = 1;
-                    wall = new Wall(level);
-                }
                 if (snake.cnt % 400 == 0)
                 {
                     level++;
                     wall = new Wall(level);
                 }
-
-                if(snake.golovaX == wall.tempX && snake.golovaY == wall.tempY)
-                {
-                    wall.result += 10;
-                }
+          
             }
+
+ 
         }
     }
 }
