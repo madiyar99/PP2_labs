@@ -33,6 +33,7 @@ namespace ConsoleApp1
                 if (direction == 1)
                     snake.Move(1, 0);
 
+
                 if (snake.CollisionWithWall(wall) || snake.Collision())
                 {
                     Console.Clear();
@@ -88,12 +89,12 @@ namespace ConsoleApp1
 
                 if (keyInfo.Key == ConsoleKey.R)
                 {
+                   
                     Console.Clear();
                     level = 1;
                     snake = new Snake();
                     wall = new Wall(level);
                     Food food1 = new Food(level);
-                    
                 }
 
                 if (snake.cnt % 400 == 0)
