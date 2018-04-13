@@ -65,31 +65,31 @@ namespace WindowsFormsApp1
             label5.Location = new Point(tempX4, tempY4);
             label6.Location = new Point(tempX5, tempY5);
 
-            if (Math.Abs(x - tempX1) < 32 && tempY1 == 200)
+            if (Math.Abs(x - tempX1) < 28 && tempY1 == 200)
             {
                 timer1.Enabled = false;
                 MessageBox.Show("GAME OVER!!! Your score: " + result);
             }
 
-            if (Math.Abs(x - tempX2) < 32 && tempY2 == 200)
+            if (Math.Abs(x - tempX2) < 28 && tempY2 == 200)
             {
                 timer1.Enabled = false;
                 MessageBox.Show("GAME OVER!!! Your score: " + result);
             }
 
-            if (Math.Abs(x - tempX3) < 32 && tempY3 == 200)
+            if (Math.Abs(x - tempX3) < 28 && tempY3 == 200)
             {
                 timer1.Enabled = false;
                 MessageBox.Show("GAME OVER!!! Your score: " + result);
             }
 
-            if (Math.Abs(x - tempX4) < 32 && tempY4 == 200)
+            if (Math.Abs(x - tempX4) < 28 && tempY4 == 200)
             {
                 timer1.Enabled = false;
                 MessageBox.Show("GAME OVER!!! Your score: " + result);
             }
 
-            if (Math.Abs(x - tempX5) < 32 && tempY5 == 200)
+            if (Math.Abs(x - tempX5) < 28 && tempY5 == 200)
             {
                 timer1.Enabled = false;
                 MessageBox.Show("GAME OVER!!! Your score: " + result);

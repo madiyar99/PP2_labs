@@ -21,6 +21,10 @@ namespace WindowsFormsApp1
         {
             Button btn = (Button)sender;
             btn.Text = (int.Parse(btn.Text) + 1).ToString();
+            if(btn == button5)
+            {
+                MessageBox.Show("button5");
+            }
         }
     }
 }
