@@ -12,13 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        double d, perc, fact = 1;
+        double d, perc, fact = 1, memory_value;
         int count = 0, length;
         string str;
         string znak;
         double value;
-        string[] arr = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-
 
         public Form1()
         {
@@ -96,6 +94,36 @@ namespace WindowsFormsApp1
             textBox1.Text = "";
             count = 0;
             d = 0;
+        }
+
+        private void memory_Click(object sender, EventArgs e)
+        {
+            Button btn_mem = (Button)sender;
+            if(btn_mem == MS)
+            {
+                memory_value = double.Parse(textBox1.Text);
+            }
+
+            else if(btn_mem == M_minus)
+            {
+                memory_value = memory_value - double.Parse(textBox1.Text);
+            }
+
+            else if (btn_mem == M_plus)
+            {
+                memory_value = memory_value + double.Parse(textBox1.Text);
+            }
+
+            else if (btn_mem == MR)
+            {
+                textBox1.Text = (memory_value).ToString();
+            }
+
+            else if (btn_mem == MC)
+            {
+                memory_value = 0;
+            }
+
         }
 
         private void CE_Click(object sender, EventArgs e)
@@ -177,6 +205,55 @@ namespace WindowsFormsApp1
                 textBox1.Text = Math.Pow(10, double.Parse(textBox1.Text)).ToString();
             }
 
+            else if(btn_func == sin)
+            {
+                textBox2.Text = "sin(" + double.Parse(textBox1.Text) + ")";
+                textBox1.Text = Math.Sin(double.Parse(textBox1.Text) * Math.PI / 180).ToString();
+            }
+
+            else if (btn_func == cos)
+            {
+                textBox2.Text = "cos(" + double.Parse(textBox1.Text) + ")";
+                if (double.Parse(textBox1.Text) % 90 == 0 && (double.Parse(textBox1.Text) / 90) % 2 != 0)
+                {
+                    textBox1.Text = "0";
+                }
+                else
+                {
+                    textBox1.Text = Math.Cos(double.Parse(textBox1.Text) * Math.PI / 180).ToString();
+                }
+            }
+
+            else if (btn_func == tan)
+            {
+                textBox2.Text = "tan(" + double.Parse(textBox1.Text) + ")";
+                if (double.Parse(textBox1.Text) % 90 == 0 && (double.Parse(textBox1.Text) / 90) % 2 != 0)
+                {
+                    textBox1.Text = "Ошибка";
+                }
+                else
+                {
+                    textBox1.Text = Math.Tan(double.Parse(textBox1.Text) * Math.PI / 180).ToString();
+                }
+            }
+
+            else if(btn_func == asin)
+            {
+                textBox2.Text = "sin^-1(" + double.Parse(textBox1.Text) + ")";
+                textBox1.Text = (Math.Asin(double.Parse(textBox1.Text)) * 180 / Math.PI).ToString();
+            }
+
+            else if (btn_func == acos)
+            {
+                textBox2.Text = "acos^-1(" + double.Parse(textBox1.Text) + ")";
+                textBox1.Text = (Math.Acos(double.Parse(textBox1.Text)) * 180 / Math.PI).ToString();
+            }
+
+            else if(btn_func == atan)
+            {
+                textBox2.Text = "atan^-1(" + double.Parse(textBox1.Text) + ")";
+                textBox1.Text = (Math.Atan(double.Parse(textBox1.Text)) * 180 / Math.PI).ToString();
+            }
         }
 
         private void equal_click(object sender, EventArgs e)

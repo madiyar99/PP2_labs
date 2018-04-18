@@ -60,12 +60,23 @@
             this.ex = new System.Windows.Forms.Button();
             this.x10 = new System.Windows.Forms.Button();
             this.mod = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            this.asin = new System.Windows.Forms.Button();
+            this.acos = new System.Windows.Forms.Button();
+            this.atan = new System.Windows.Forms.Button();
+            this.MS = new System.Windows.Forms.Button();
+            this.M_minus = new System.Windows.Forms.Button();
+            this.M_plus = new System.Windows.Forms.Button();
+            this.MR = new System.Windows.Forms.Button();
+            this.MC = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // num7
             // 
             this.num7.BackColor = System.Drawing.Color.White;
-            this.num7.Location = new System.Drawing.Point(143, 321);
+            this.num7.Location = new System.Drawing.Point(174, 321);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(53, 50);
             this.num7.TabIndex = 0;
@@ -76,7 +87,7 @@
             // num8
             // 
             this.num8.BackColor = System.Drawing.Color.White;
-            this.num8.Location = new System.Drawing.Point(221, 321);
+            this.num8.Location = new System.Drawing.Point(252, 321);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(53, 50);
             this.num8.TabIndex = 1;
@@ -87,7 +98,7 @@
             // num9
             // 
             this.num9.BackColor = System.Drawing.Color.White;
-            this.num9.Location = new System.Drawing.Point(300, 321);
+            this.num9.Location = new System.Drawing.Point(331, 321);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(53, 50);
             this.num9.TabIndex = 2;
@@ -98,7 +109,7 @@
             // num6
             // 
             this.num6.BackColor = System.Drawing.Color.White;
-            this.num6.Location = new System.Drawing.Point(300, 388);
+            this.num6.Location = new System.Drawing.Point(331, 388);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(53, 50);
             this.num6.TabIndex = 3;
@@ -109,7 +120,7 @@
             // num5
             // 
             this.num5.BackColor = System.Drawing.Color.White;
-            this.num5.Location = new System.Drawing.Point(221, 388);
+            this.num5.Location = new System.Drawing.Point(252, 388);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(53, 50);
             this.num5.TabIndex = 4;
@@ -120,7 +131,7 @@
             // num4
             // 
             this.num4.BackColor = System.Drawing.Color.White;
-            this.num4.Location = new System.Drawing.Point(143, 388);
+            this.num4.Location = new System.Drawing.Point(174, 388);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(53, 50);
             this.num4.TabIndex = 5;
@@ -131,7 +142,7 @@
             // num3
             // 
             this.num3.BackColor = System.Drawing.Color.White;
-            this.num3.Location = new System.Drawing.Point(300, 456);
+            this.num3.Location = new System.Drawing.Point(331, 456);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(53, 49);
             this.num3.TabIndex = 6;
@@ -142,7 +153,7 @@
             // num2
             // 
             this.num2.BackColor = System.Drawing.Color.White;
-            this.num2.Location = new System.Drawing.Point(221, 456);
+            this.num2.Location = new System.Drawing.Point(252, 456);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(53, 49);
             this.num2.TabIndex = 7;
@@ -153,7 +164,7 @@
             // num1
             // 
             this.num1.BackColor = System.Drawing.Color.White;
-            this.num1.Location = new System.Drawing.Point(143, 456);
+            this.num1.Location = new System.Drawing.Point(174, 456);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(53, 49);
             this.num1.TabIndex = 8;
@@ -166,7 +177,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(30, 98);
+            this.textBox1.Location = new System.Drawing.Point(61, 76);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(395, 37);
             this.textBox1.TabIndex = 9;
@@ -174,7 +185,7 @@
             // 
             // multiple
             // 
-            this.multiple.Location = new System.Drawing.Point(372, 321);
+            this.multiple.Location = new System.Drawing.Point(403, 321);
             this.multiple.Name = "multiple";
             this.multiple.Size = new System.Drawing.Size(53, 49);
             this.multiple.TabIndex = 10;
@@ -185,7 +196,7 @@
             // minus
             // 
             this.minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.minus.Location = new System.Drawing.Point(372, 388);
+            this.minus.Location = new System.Drawing.Point(403, 388);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(53, 50);
             this.minus.TabIndex = 11;
@@ -196,7 +207,7 @@
             // plus
             // 
             this.plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.plus.Location = new System.Drawing.Point(372, 456);
+            this.plus.Location = new System.Drawing.Point(403, 456);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(53, 49);
             this.plus.TabIndex = 12;
@@ -207,7 +218,7 @@
             // num0
             // 
             this.num0.BackColor = System.Drawing.Color.White;
-            this.num0.Location = new System.Drawing.Point(221, 521);
+            this.num0.Location = new System.Drawing.Point(252, 521);
             this.num0.Name = "num0";
             this.num0.Size = new System.Drawing.Size(53, 49);
             this.num0.TabIndex = 13;
@@ -220,7 +231,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(30, 38);
+            this.textBox2.Location = new System.Drawing.Point(61, 34);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(395, 21);
             this.textBox2.TabIndex = 14;
@@ -229,7 +240,7 @@
             // equal
             // 
             this.equal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.equal.Location = new System.Drawing.Point(372, 521);
+            this.equal.Location = new System.Drawing.Point(403, 521);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(53, 49);
             this.equal.TabIndex = 15;
@@ -239,7 +250,7 @@
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(221, 256);
+            this.clear.Location = new System.Drawing.Point(252, 256);
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(53, 49);
             this.clear.TabIndex = 16;
@@ -249,7 +260,7 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(300, 256);
+            this.back.Location = new System.Drawing.Point(331, 256);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(53, 48);
             this.back.TabIndex = 17;
@@ -260,7 +271,7 @@
             // plus_minus
             // 
             this.plus_minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.plus_minus.Location = new System.Drawing.Point(140, 521);
+            this.plus_minus.Location = new System.Drawing.Point(171, 521);
             this.plus_minus.Name = "plus_minus";
             this.plus_minus.Size = new System.Drawing.Size(56, 49);
             this.plus_minus.TabIndex = 18;
@@ -270,7 +281,7 @@
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(372, 256);
+            this.division.Location = new System.Drawing.Point(403, 256);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(53, 48);
             this.division.TabIndex = 19;
@@ -281,7 +292,7 @@
             // comma
             // 
             this.comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comma.Location = new System.Drawing.Point(300, 521);
+            this.comma.Location = new System.Drawing.Point(331, 521);
             this.comma.Name = "comma";
             this.comma.Size = new System.Drawing.Size(53, 48);
             this.comma.TabIndex = 20;
@@ -291,7 +302,7 @@
             // 
             // CE
             // 
-            this.CE.Location = new System.Drawing.Point(143, 256);
+            this.CE.Location = new System.Drawing.Point(174, 256);
             this.CE.Name = "CE";
             this.CE.Size = new System.Drawing.Size(53, 47);
             this.CE.TabIndex = 21;
@@ -301,7 +312,7 @@
             // 
             // square
             // 
-            this.square.Location = new System.Drawing.Point(372, 192);
+            this.square.Location = new System.Drawing.Point(403, 192);
             this.square.Name = "square";
             this.square.Size = new System.Drawing.Size(53, 49);
             this.square.TabIndex = 22;
@@ -311,7 +322,7 @@
             // 
             // change
             // 
-            this.change.Location = new System.Drawing.Point(300, 192);
+            this.change.Location = new System.Drawing.Point(331, 192);
             this.change.Name = "change";
             this.change.Size = new System.Drawing.Size(53, 48);
             this.change.TabIndex = 23;
@@ -321,7 +332,7 @@
             // 
             // root
             // 
-            this.root.Location = new System.Drawing.Point(221, 192);
+            this.root.Location = new System.Drawing.Point(252, 192);
             this.root.Name = "root";
             this.root.Size = new System.Drawing.Size(53, 47);
             this.root.TabIndex = 24;
@@ -331,7 +342,7 @@
             // 
             // percent
             // 
-            this.percent.Location = new System.Drawing.Point(143, 192);
+            this.percent.Location = new System.Drawing.Point(174, 192);
             this.percent.Name = "percent";
             this.percent.Size = new System.Drawing.Size(53, 47);
             this.percent.TabIndex = 25;
@@ -341,7 +352,7 @@
             // 
             // p
             // 
-            this.p.Location = new System.Drawing.Point(68, 521);
+            this.p.Location = new System.Drawing.Point(99, 521);
             this.p.Name = "p";
             this.p.Size = new System.Drawing.Size(53, 48);
             this.p.TabIndex = 26;
@@ -351,7 +362,7 @@
             // 
             // factorial
             // 
-            this.factorial.Location = new System.Drawing.Point(68, 456);
+            this.factorial.Location = new System.Drawing.Point(99, 456);
             this.factorial.Name = "factorial";
             this.factorial.Size = new System.Drawing.Size(53, 48);
             this.factorial.TabIndex = 27;
@@ -361,7 +372,7 @@
             // 
             // ln
             // 
-            this.ln.Location = new System.Drawing.Point(68, 388);
+            this.ln.Location = new System.Drawing.Point(99, 388);
             this.ln.Name = "ln";
             this.ln.Size = new System.Drawing.Size(53, 49);
             this.ln.TabIndex = 28;
@@ -371,7 +382,7 @@
             // 
             // ex
             // 
-            this.ex.Location = new System.Drawing.Point(68, 321);
+            this.ex.Location = new System.Drawing.Point(99, 321);
             this.ex.Name = "ex";
             this.ex.Size = new System.Drawing.Size(53, 48);
             this.ex.TabIndex = 29;
@@ -382,7 +393,7 @@
             // x10
             // 
             this.x10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.x10.Location = new System.Drawing.Point(68, 256);
+            this.x10.Location = new System.Drawing.Point(99, 256);
             this.x10.Name = "x10";
             this.x10.Size = new System.Drawing.Size(53, 46);
             this.x10.TabIndex = 30;
@@ -392,7 +403,7 @@
             // 
             // mod
             // 
-            this.mod.Location = new System.Drawing.Point(68, 192);
+            this.mod.Location = new System.Drawing.Point(99, 192);
             this.mod.Name = "mod";
             this.mod.Size = new System.Drawing.Size(53, 46);
             this.mod.TabIndex = 31;
@@ -400,11 +411,132 @@
             this.mod.UseVisualStyleBackColor = true;
             this.mod.Click += new System.EventHandler(this.znak_Click);
             // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(12, 192);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(64, 46);
+            this.sin.TabIndex = 32;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.func_Click);
+            // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(13, 256);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(63, 46);
+            this.cos.TabIndex = 33;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.func_Click);
+            // 
+            // tan
+            // 
+            this.tan.Location = new System.Drawing.Point(13, 321);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(63, 48);
+            this.tan.TabIndex = 34;
+            this.tan.Text = "tan";
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.func_Click);
+            // 
+            // asin
+            // 
+            this.asin.Location = new System.Drawing.Point(13, 388);
+            this.asin.Name = "asin";
+            this.asin.Size = new System.Drawing.Size(63, 49);
+            this.asin.TabIndex = 35;
+            this.asin.Text = "sin^-1";
+            this.asin.UseVisualStyleBackColor = true;
+            this.asin.Click += new System.EventHandler(this.func_Click);
+            // 
+            // acos
+            // 
+            this.acos.Location = new System.Drawing.Point(12, 456);
+            this.acos.Name = "acos";
+            this.acos.Size = new System.Drawing.Size(64, 47);
+            this.acos.TabIndex = 36;
+            this.acos.Text = "cos^-1";
+            this.acos.UseVisualStyleBackColor = true;
+            this.acos.Click += new System.EventHandler(this.func_Click);
+            // 
+            // atan
+            // 
+            this.atan.Location = new System.Drawing.Point(13, 521);
+            this.atan.Name = "atan";
+            this.atan.Size = new System.Drawing.Size(63, 48);
+            this.atan.TabIndex = 37;
+            this.atan.Text = "tan^-1";
+            this.atan.UseVisualStyleBackColor = true;
+            this.atan.Click += new System.EventHandler(this.func_Click);
+            // 
+            // MS
+            // 
+            this.MS.Location = new System.Drawing.Point(387, 141);
+            this.MS.Name = "MS";
+            this.MS.Size = new System.Drawing.Size(69, 35);
+            this.MS.TabIndex = 38;
+            this.MS.Text = "MS";
+            this.MS.UseVisualStyleBackColor = true;
+            this.MS.Click += new System.EventHandler(this.memory_Click);
+            // 
+            // M_minus
+            // 
+            this.M_minus.Location = new System.Drawing.Point(297, 141);
+            this.M_minus.Name = "M_minus";
+            this.M_minus.Size = new System.Drawing.Size(75, 35);
+            this.M_minus.TabIndex = 39;
+            this.M_minus.Text = "M -";
+            this.M_minus.UseVisualStyleBackColor = true;
+            this.M_minus.Click += new System.EventHandler(this.memory_Click);
+            // 
+            // M_plus
+            // 
+            this.M_plus.Location = new System.Drawing.Point(202, 141);
+            this.M_plus.Name = "M_plus";
+            this.M_plus.Size = new System.Drawing.Size(75, 35);
+            this.M_plus.TabIndex = 40;
+            this.M_plus.Text = "M +";
+            this.M_plus.UseVisualStyleBackColor = true;
+            this.M_plus.Click += new System.EventHandler(this.memory_Click);
+            // 
+            // MR
+            // 
+            this.MR.Location = new System.Drawing.Point(108, 141);
+            this.MR.Name = "MR";
+            this.MR.Size = new System.Drawing.Size(75, 35);
+            this.MR.TabIndex = 41;
+            this.MR.Text = "MR";
+            this.MR.UseVisualStyleBackColor = true;
+            this.MR.Click += new System.EventHandler(this.memory_Click);
+            // 
+            // MC
+            // 
+            this.MC.Location = new System.Drawing.Point(12, 141);
+            this.MC.Name = "MC";
+            this.MC.Size = new System.Drawing.Size(75, 35);
+            this.MC.TabIndex = 42;
+            this.MC.Text = "MC";
+            this.MC.UseVisualStyleBackColor = true;
+            this.MC.Click += new System.EventHandler(this.memory_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 588);
+            this.ClientSize = new System.Drawing.Size(493, 588);
+            this.Controls.Add(this.MC);
+            this.Controls.Add(this.MR);
+            this.Controls.Add(this.M_plus);
+            this.Controls.Add(this.M_minus);
+            this.Controls.Add(this.MS);
+            this.Controls.Add(this.atan);
+            this.Controls.Add(this.acos);
+            this.Controls.Add(this.asin);
+            this.Controls.Add(this.tan);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.mod);
             this.Controls.Add(this.x10);
             this.Controls.Add(this.ex);
@@ -479,6 +611,17 @@
         private System.Windows.Forms.Button ex;
         private System.Windows.Forms.Button x10;
         private System.Windows.Forms.Button mod;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button asin;
+        private System.Windows.Forms.Button acos;
+        private System.Windows.Forms.Button atan;
+        private System.Windows.Forms.Button MS;
+        private System.Windows.Forms.Button M_minus;
+        private System.Windows.Forms.Button M_plus;
+        private System.Windows.Forms.Button MR;
+        private System.Windows.Forms.Button MC;
     }
 }
 
