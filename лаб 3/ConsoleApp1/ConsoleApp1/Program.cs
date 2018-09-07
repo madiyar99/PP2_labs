@@ -35,6 +35,7 @@ namespace ConsoleApp1
             }
         }
 
+
         static void Main(string[] args)
         {
             DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\Users\Asus\Desktop\PP2_labs_local");

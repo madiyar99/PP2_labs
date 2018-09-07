@@ -14,7 +14,7 @@ namespace ConsoleApp1
             DirectoryInfo directory = new DirectoryInfo(@"C:\Users\Asus\Desktop\PP2_labs_local"); //Создаем экземпляр и прописываем путь к папке
             DirectoryInfo[] ds = directory.GetDirectories(); // Записываем в массив ds все папки из этого пути
             FileInfo[] fs = directory.GetFiles(); // Записываем в массив fs все файлы из этого пути
-            /*
+           
             foreach (DirectoryInfo d in ds)
             {
                 Console.WriteLine(d.Name);
@@ -24,8 +24,8 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(f.Name);
             }
-            */
 
+            /*
             FileSystemInfo[] fss = directory.GetFileSystemInfos(); // Записываем в ммассив fss и папки и файлы 
             foreach (FileSystemInfo f in fss) // Выводим все, что есть в массиве fss
             {
@@ -38,9 +38,9 @@ namespace ConsoleApp1
                     Console.WriteLine("File: " + f.FullName); // Выводим весь путь к файлу
                 }
             }
+
+            */
             Console.ReadKey();
-
-
         }
     }
 }
