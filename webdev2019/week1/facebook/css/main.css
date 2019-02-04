@@ -1,0 +1,199 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/*-------- Header --------*/
+
+header {
+	background-color: #3B5998;
+	width: 100%;
+	height: 87px;
+}
+
+.logoF {
+	height: 32px;
+	margin-top: 30px;
+}
+
+.form_block {
+	margin-top: 15px;
+}
+
+.loginInput {
+	height: 22px;
+	width: 150px;
+}
+
+label {
+	margin-right: 25px;
+}
+
+.label_par {
+	color: white;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 5px;	
+}
+
+.myBut {
+	height: 22px;
+	font-size: 14px;
+	margin-top: 21px;
+	background-color: #4267b2;
+	border: 1px solid #29487d;
+	color: white;
+	padding-top: 1px;
+	padding-bottom: 2px;
+}
+
+.myBut:hover {
+	color: white;
+	background-color: #395da6;
+}
+
+.forgetPass a {
+	color: #9cb4d8;
+}
+
+.forgetPass a:hover{
+	color: #9cb4d8;
+}
+
+/*-------- Section1 -------*/
+
+.section1 {
+	background-color: #dbdfec;
+	height: 720px;
+	box-shadow: inset 0 200px 200px 15px #fff;
+}
+
+.aboutFacebook {
+	color: #0e385f;
+	font-size: 20px;
+	font-weight: bold;
+	width: 500px;
+	margin-top: 50px;
+}
+
+.regTitle {
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.regPar {
+	font-size: 19px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+.regInput {
+	font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #bdc7d8;
+    width: 215px;
+    margin-right: 15px;
+}
+
+.regLong {
+	width: 100%;
+}
+
+.yearPar {
+	font-size: 18px;
+	margin-left: 3px;
+}
+
+select {
+	width: 80px;
+	height: 35px;
+	padding-left: 10px;
+}
+
+.select_block {
+	font-size: 15px;
+	float: left;
+	margin-right: 10px;
+}
+
+.gender_block {
+	margin-top: 20px;
+}
+
+.gender_label p{
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.gender_input {
+	width: 16px; 
+	height: 16px;
+}
+
+.confidentiality {
+	font-size: 12px;
+	width: 350px;
+	color: #8f9093;
+}
+
+.regButton {
+	margin-top: 12px;
+	background: linear-gradient(#67ae55, #578843);
+	background-color: #69a74e;
+	font-weight: bold;
+	padding: 7px 45px;
+    text-align: center;
+    border: 2px solid #3b6e22;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    box-shadow: inset 0 1px 1px #a4e388;
+}
+
+.regButton:hover{
+	background-color: #589946;
+	background: linear-gradient(#589946, #578843);
+}
+
+.createPar {
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+/*---------- Footer -----------*/
+
+.lng_block li {
+	margin-right: 15px;
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.lng_block li a {
+	color: #365899;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: #d0d3d7;
+}
+
+.category_block li {
+	margin-right: 19px;
+	margin-bottom: -20px;
+}
+
+.facebook2019 {
+	font-size: 11px;
+	color: #737373;
+	margin-top: 30px;
+}
