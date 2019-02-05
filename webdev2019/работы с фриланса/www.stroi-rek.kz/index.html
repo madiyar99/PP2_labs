@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stroi-rek</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Плавный скролл по якорям
+			$('a[href^="#"]').click(function () { 
+			    elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+			    	$('html').animate( { scrollTop: destination }, 1000 );
+				return false;
+		   });
+		});
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="header_up">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="adress_block d-flex">
+							<div>
+								<img src="img/sign.png" class="sign">
+							</div>						
+							<p>г.Алматы, ул.Монгольская 44, 2-этаж 210 кабинет</p>				
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="adress_block d-flex">
+							<div>
+								<img src="img/phone.png" class="sign">
+							</div>						
+							<p>+7 (708) 859 - 07 - 98 </p>	
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="pull-right">
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="fab fa-vk"></i>
+							</a>
+							<a href="#">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
+							<a href="https://www.instagram.com/srroyrek/">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="header_title">
+							ХОТИТЕ ПОЛУЧИТЬ <span>РАЗРЕШЕНИЕ </span>НА ЗАСТРОЙКУ ОБЪЕКТА?
+						</h1>
+						<p class="header_par">
+							Разрешение на строительство за 30 дней
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="block_buttons d-flex">
+							<button type="button" class="button_call" data-target="#zayav" data-toggle="modal">СВЯЖИТЕСЬ С НАМИ</button>
+							<p class="or">или</p>
+							<form action="#yakor_company">
+								<button class="button_more">УЗНАТЬ ПОДРОБНЕЕ</button>
+							</form>
+						</div>
+					</div>
+				</div>
+					<div class="modal fade" id="zayav" tabindex="-1" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title_m">Заявка</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<form action="mail.php" method="POST">
+											<p class="modal_par">Оставьте заявку, и наш оператор перезвонит вам в течение часа.</p>
+											<input type="text"
+											class="form-control modal_inp" placeholder="Ваше имя" id="" name="user_name" required>
+											<input type="text" class="form-control modal_inp" placeholder="Ваш номер" id="" name="user_phone" required>
+											<input type="text" class="form-control modal_inp" placeholder="Ваш emal" id="" name="user_mail" required>
+											<button type="submit" class="form-control zayav_but">
+												Оставить заявку
+											</button>
+										</form>		
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="header_content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="logo"></div>
+					</div>
+					<div class="col-md-7">
+						<nav>
+							<ul class="menu d-flex">
+								<li>
+									<a href="#yakor_company">
+										О нас
+									</a>
+								</li>
+								<li>
+									<a href="#yakor_process">
+										Как мы работаем
+									</a>
+								</li>
+								<li>
+									<a href="rns.html">
+										Разрешение на строительство
+									</a>
+								</li>
+								<li>
+									<a href="law.html">
+										Узаконение
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section1" id="yakor_company">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="line"></div>
+					<h2>О НАШЕЙ КОМПАНИИ</h2>
+					<p class="about_par">
+						ТОО «Строй-Рек» выполняет работы в области архитектурной и градостроительной деятельности. Основное направление — проектирование и узаконение жилых  и коммерческих объектов.
+					</p>
+					<p class="about_par">
+						Мы, профессионалы в этих вопросах и предлагаем Вам наше время, огромный опыт  работы, умение  и терпение. Гарантируем качество, минимальные сроки, доступные цены.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9 video">
+						<iframe width="709" height="399" class="embed-responsive-item" src="https://www.youtube.com/embed/Wjn-Ux94EYU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section2">
+		<div class="section2_content" id="yakor_process">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="line"></div>
+						<h2 class="work_title">КАК МЫ РАБОТАЕМ</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div>
+							<div class="work_img1"></div>
+							<h3>Сбор документов для РНС</h3>
+							<p class="work_par">Разрешение на строительство, важнейший документ перед началом строительства</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="work_center">
+							<div class="work_img2"></div>
+							<h3>Получение РНС за месяц</h3>
+							<p class="work_par">Топографическая съемка, Инженерно-геологическое заключение, Тех. условия водоснабжение и свет...</p>
+						</div>							
+					</div>
+					<div class="col-md-4">
+						<div class="pull-right work_right">
+							<div class="work_img3"></div>
+							<h3 class="reg_title">Регистрация объекта</h3>
+							<p class="work_par reg_par">Разрешение на строительство, важнейший документ перед началом строительства</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="section3_block">
+						<img src="img/star.png" class="block_img">
+						<p class="block_title">КАЧЕСТВО</p>
+						<p class="block_par">
+							На любом этапе строительства вы можете проверить качество выполненных работ, так как строительство ведут только лицензированные подрядчики.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="section3_block1">
+						<img src="img/galka.png" class="block_img">
+						<p class="block_title">ДЕЛАЕМ ВСЕ САМИ</p>
+						<p class="block_par1">
+							Например: Разрешение на строительство за 45 дней, закупаем, доставляем, бригады профессиональных строителей, вводим в эксплуатацию, контролируем качество - авторский и технический надзор.
+						</p>						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="section3_block">
+						<img src="img/time.png" class="block_img">
+						<p class="block_title">ВСЕ В СРОКИ</p>
+						<p class="block_par">
+							Мы юридически оговариваем сроки строительства, и гарантируем сдачу объекта вовремя.
+						</p>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>О НАШЕЙ КОМПАНИИ</h4>
+					<div class="footer_line"></div>
+					<p class="footer_par">
+						ТОО «Строй-Рек» выполняет работы в области архитектурной и градостроительной деятельности. Основное направление — проектирование и узаконение жилых и коммерческих объектов. 
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4>НАВИГАЦИЯ ПО САЙТУ</h4>
+					<div class="footer_line"></div>
+					<div>
+						<ul class="footer_menu">
+							<li>
+								<a href="#yakor_company">О нас</a>
+							</li>
+							<li>
+								<a href="#yakor_process">Процесс работы</a>
+							</li>	
+							<li>
+								<a href="law.html">Узаконение</a>
+							</li>
+							<li>
+								<a href="rns.html">Разрешение на строительство</a>
+							</li>
+							<li>
+								<a href="#">Свяжитесь с нами</a>
+							</li>
+						</ul>						
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h4>КОНТАКТЫ</h4>
+					<div class="footer_line"></div>	
+					<div>
+						<div>
+							<h5>Телефон :</h5>
+							<p class="h5_par">
+								+7 708 859 07 98 <br>
+								+7 700 697 65 94<br>
+								+7 747 565 51 10
+							</p>
+						</div>
+						<div>
+							<h5 class="h5_email">Email :</h5>
+							<p class="h5_par">
+								stroyrek3@gmail.com
+							</p>				
+						</div>
+						<div>
+							<h5 class="h5_email">Адрес :</h5>
+							<p class="h5_par">
+								г.Алматы, ул.Монгольская 44, 2-этаж 210 кабинет
+							</p>
+						</div>
+					</div>			
+				</div>
+				<div class="col-md-2">
+					<h4>ЗАЯВКА</h4>
+					<div class="footer_line"></div>
+					<div>
+						<form action="mail.php" class="form" method="POST">
+							<input type="text" placeholder="Ваше имя" class="inp" class="form-control" name="user_name" required>
+							<input type="text" placeholder="Ваш номер" class="inp" class="form-control" name="user_phone" required>
+							<input type="text" placeholder="Ваш email" class="inp" class="form-control" name="user_mail" required>
+							<button type="submit" class="form_button btn btn-primary">Связаться с нами</button>
+						</form>
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">
+						Copyright@2018 Stroi-REK corporation <br>
+						made by growthix team
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
