@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Growhtix</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/modal-login.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header_content" id="bg">
+			<div class="header_menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 logo">Growthix</div>
+						<div class="col-md-7">
+							<div class="nav">
+								<ul class="menu d-flex">
+									<li>
+										<a href="index.html">
+											ГЛАВНАЯ
+										</a>
+									</li>
+									<li>
+										<a href="companies.html">
+											О КОМПАНИЯХ
+										</a>
+									</li>
+									<li>
+										<a href="test1.html">
+											ТЕСТ
+										</a>
+									</li>
+									<li>
+										<a href="#" data-target="#loginModal" data-toggle="modal">
+											ВОЙТИ
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="underHeader">
+				<div class="container">
+					<div class="modal fade" id="loginModal" tabindex="-1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title">Вход</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control" placeholder="Логин">
+										<input type="text" class="form-control" placeholder="Пароль">
+										<p class="password_forget pull-right"><a href="#" data-dismiss="modal" data-target="#PasswordModal" data-toggle="modal">Забыли пароль?</a></p>
+										<button type="submit" class="btn login form-control">Войти</button>
+										<p class="sign_in">или<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModalReg"> зарегистрируйтесь</a></p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary facebook">Facebook</button>
+									<button type="button" class="btn btn-info vk"><p>Вконтакте</p></button>
+									<button type="button" class="btn btn-danger google"><p>Google+</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="loginModalReg">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title">Регистрация</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<form action="#">
+											<input type="text"
+											class="form-control" placeholder="Логин">
+											<input type="text" class="form-control" placeholder="Пароль">
+											<input type="text" class="form-control" placeholder="Подтвердите пароль">
+											<button type="submit" class="btn regin form-control">Зарегистрироваться</button>
+											<p class="sign_in">или<a href="#" data-dismiss="modal" data-target="#loginModal" data-toggle="modal"> войти</a></p>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary facebook">Facebook</button>
+									<button type="button" class="btn btn-info vk"><p>Вконтакте</p></button>
+									<button type="button" class="btn btn-danger google"><p>Google+</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="PasswordModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="password_upper_par">Забыли пароль</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control password" placeholder="Ваш e-mail">
+										<p class="password_under_par">Ссылка для восстановления будет отправлена на вашу электронную почту</p>
+										<button type="submit" class="btn login form-control">Отправить ссылку</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="growthix">growthix</h1>
+							<div class="line"></div>
+							<h2 class="underGrowthix">Первый шаг в успешное будущее</h2>
+							<button class="more">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section1 d-flex">
+		<div class="textbook_block"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h3 class="about_h">О нас</h3>
+					<p class="about_par">
+						Growthix - это уникальная платформа, с помощью которой вы сможете ознакомиться с различными профессиями, специальностями, вузами, пройти бесплатный профориентационный тест, а также получить практические задания от различных компаний.
+					</p>					
+					<button class="start">Присоедениться</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</section>
+	<section class="section2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="with_us_h">С нами</h3>
+					<p class="with_us">
+						Для студентов мы также предлагаем широкий спектр возможностей: возможность связаться с компанией, решать бизнес-кейсы, пройти профориентационный тест и наконец определиться с проффесией
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/hand.svg" class="iconAll">
+						<p>
+							Первый, не имеющий аналагов проект в Казахстане.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/test.svg" class="iconAll">
+						<p>
+							Полностью бесплатный профориентационный тест.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/reward.svg" class="iconAll">
+						<p>
+							Информация о самых разных профессиях, специальностях,ВУЗах
+						</p>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/idea.svg" class="iconAll">
+						<p>
+							Первый, не имеющий аналагов проект в Казахстане.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/worldwide.svg" class="iconAll">
+						<p>
+							Полностью бесплатный профориентационный тест.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/analysis.svg" class="iconAll">
+						<p>
+							Информация о самых разных профессиях, специальностях,ВУЗах
+						</p>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/talent-search.svg" class="iconAll">
+						<p>
+							Первый, не имеющий аналагов проект в Казахстане.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/excursion.svg" class="iconAll">
+						<p>
+							Полностью бесплатный профориентационный тест.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon">
+						<img src="icons/avatar.svg" class="iconAll">
+						<p>
+							Информация о самых разных профессиях, специальностях,ВУЗах
+						</p>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section3 d-flex">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h3 class="test_h">Кем ты можешь стать</h3>
+					<p class="test_par about_par">
+						На нашем сайте вы сможете пройти специальный тест, который поможет вам в выборе профессии, опираясь на ваши личные качества, склонности и интересы
+					</p>					
+					<button class="test_but">Пройти тест</button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<div class="textbook_block"></div>
+	</section>
+	<section class="section4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="partners_h">Наши партнеры</h3>
+					<p class="partners">
+						Мы хотим познакомить вас с самыми разными и выдающимися компаниями и их специалистами, чтобы получить незабываемый опыт и приблизиться еще на шаг к вашей цели! 
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="sber"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="choco"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="kbtu"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="kaspi"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>
+						ИНФОРМАЦИЯ
+					</h4>
+					<p class="footer_about">
+						Growthix - это уникальная платформа, с помощью которой вы сможете ознакомиться с различными профессиями, специальностями, вузами, пройти бесплатный профориентационный тест, а также получить практические задания от различных компаний.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4>
+						НАВИГАЦИЯ
+					</h4>
+					<div class="d-flex">
+						<div>
+							<ul  class="footer_menu">
+								<li>
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Услуги</a>
+								</li>
+								<li>
+									<a href="#">Ответы</a>
+								</li>
+								<li>
+									<a href="#">О компаниях</a>
+								</li>
+							</ul>
+						</div>	
+						<div class="without_h">
+							<ul  class="footer_menu">
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Помощь</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</div>	
+					</div>				
+				</div>
+				<div class="col-md-2">
+					<h4>
+						КОНТАКТЫ
+					</h4>
+					<div>
+						<div>
+							<h5>Телефон :</h5>
+							<p class="contacts">+7(707)770-70-70</p>
+						</div>
+						<div>
+							<h5>Email :</h5>
+							<p class="contacts">growthix@company.com</p>
+						</div>
+						<div>
+							<h5>Адрес :</h5>
+							<p class="contacts">Номер улицы, номер дома, номер квартиры</p>
+						</div>
+					</div>						
+				</div>
+				<div class="col-md-3 div_form">
+					<div>
+						<form action="" class="form" method="POST">
+							<input type="text" placeholder="Ваше имя" class="inp">
+							<input type="text" placeholder="Ваш Email" class="inp">
+							<textarea  cols="21" rows="3" placeholder="Сообщение" class="text_area"></textarea>
+							<button type="submit" class="form_button btn btn-primary">Связаться с нами</button>
+						</form>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">Copyright@2018 Growthix Corporation</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="js/bg.js"></script>
+<script src="js/headhesive.min.js"></script>
+<script src="js/header_scroll.js"></script>
+</body>
+</html>

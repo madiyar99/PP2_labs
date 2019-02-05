@@ -1,0 +1,48 @@
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #8502b6;
+  background: #8502b6;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #8502b6;
+  background: #8502b6;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 1px solid #8502b6;
+  background: #8502b6;
+}
+
+
+.sec1 {
+	color: #8502b6;
+}
+
+.numb {
+	color: #8502b6;
+}
+
+.line {
+    background-color: #575757;
+}
+
+.circle {
+    border: 1px solid #8502b6;
+}
+
+
+.section_button {
+    background-color: #8502b6;
+    border: 1px solid #8502b6;
+}
+
+.section_button:hover {
+    background-color: #700199;
+}
+
+

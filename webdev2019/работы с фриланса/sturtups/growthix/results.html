@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Results</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/results.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/modal-login.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header_content" id="bg">
+			<div class="header_menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 logo">Growthix</div>
+						<div class="col-md-7">
+							<div class="nav">
+								<ul class="menu d-flex">
+									<li>
+										<a href="index.html">
+											ГЛАВНАЯ
+										</a>
+									</li>
+									<li>
+										<a href="companies.html">
+											О КОМПАНИЯХ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											ТЕСТ
+										</a>
+									</li>
+									<li>
+										<a href="#" data-target="#loginModal" data-toggle="modal">
+											ВОЙТИ
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>	
+				<div class="container">
+					<div class="modal fade" id="loginModal" tabindex="-1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title">Вход</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control" placeholder="Логин">
+										<input type="text" class="form-control" placeholder="Пароль">
+										<p class="password_forget pull-right"><a href="#" data-dismiss="modal" data-target="#PasswordModal" data-toggle="modal">Забыли пароль?</a></p>
+										<button type="submit" class="btn login form-control">Войти</button>
+										<p class="sign_in">или<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModalReg"> зарегистрируйтесь</a></p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary facebook">Facebook</button>
+									<button type="button" class="btn btn-info vk"><p>Вконтакте</p></button>
+									<button type="button" class="btn btn-danger google"><p>Google+</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="loginModalReg">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title">Регистрация</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control" placeholder="Логин">
+										<input type="text" class="form-control" placeholder="Пароль">
+										<input type="text" class="form-control" placeholder="Подтвердите пароль">
+										<button type="submit" class="btn regin form-control">Зарегистрироваться</button>
+										<p class="sign_in">или<a href="#" data-dismiss="modal" data-target="#loginModal" data-toggle="modal"> войти</a></p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary facebook">Facebook</button>
+									<button type="button" class="btn btn-info vk"><p>Вконтакте</p></button>
+									<button type="button" class="btn btn-danger google"><p>Google+</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="PasswordModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="password_upper_par">Забыли пароль</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control password" placeholder="Ваш e-mail">
+										<p class="password_under_par">Ссылка для восстановления будет отправлена на вашу электронную почту</p>
+										<button type="submit" class="btn login form-control">Отправить ссылку</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="header_title1">
+								Результаты профориентационного теста
+							</p>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</header>
+	<section class="section1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<img src="img/source.png" class="source_img">
+				</div>
+				<div class="col-md-7">
+					<div class="prof_block">
+						<h1 class="prof_title">
+							Вы - Изобретатель!
+						</h1>
+						<p class="prof_par">
+							Открытый, любознательный, интеллектуальный, креативный, гибкий человек с хорошо развитой логикой
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="aboutProf_block">
+						<p class="aboutProf_par">
+							Как правило, к вашим естественным талантам можно причислить способность генерировать новаторские, интересные идеи. У вас хорошие коммуникационные навыки, вы умеете находить с людьми общий язык. 
+						</p>
+						<p class="aboutProf_par">
+							У вас развито абстрактное мышление, позволяющее понимать сложные концепции, термины, процессы. Одной из ваших выдающихся особенностей является жажда знаний и постоянное стремление расширить уже имеющиеся знания и опыт. Вы любите новые впечатления, приключения и разного рода испытания, которые делают жизнь интереснее. Вы не особо любите соблюдать строгие графики, режимы, расписания и рутинную, монотонную работу. 
+						</p>
+						<p class="aboutProf_par">
+							Слишком детализированная и скрупулезная работа также может вызвать у вас скуку, вы будете постоянно отвлекаться и терять из виду важные детали. Вы смотрите на картину в целом, вам важна идея,  а вот воплощение этой идеи в жизнь часто является вашим слабым местом. Занявшись каким-либо проектом, вполне возможно, что вы заинтересуетесь новым и забросите данный. Вам хорошо подходит генерировать идеи, но вам нужны другие людьми, которые бы воплощали ваши идеи в жизнь.
+						</p>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="prof_block1">
+						<h1 class="prof_title prof_title1">
+							Ваш потенциал
+						</h1>
+						<p class="prof_par">
+							Узнайте о профессиях, которые подходят именно Вам!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<img src="img/source1.png" class="source_img">
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="prof_range">
+						<ul class="prof_range_ul">
+							<li>
+								<a href="#">
+									Менеджер по продукту
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Разработчик софта
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Фрилансер
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Системный аналитик
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Бизнес-консультант
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Венчурный капиталист
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Финансовый планировщик
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Стокброкер
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Управление операциями
+								</a>
+							</li>						
+						</ul>					
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="prof_range">
+						<ul class="prof_range_ul">
+							<li>
+								<a href="#">
+									Управление операциями
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Фотограф
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Ученый-эколог 
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Инженер
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Архитектор
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Политолог
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Аналитик рынка
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Консультант-менеджер
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Управление операциями
+								</a>
+							</li>						
+						</ul>					
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section ckass="section3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="bad_prof_title">
+						Каких профессии рекомендовано избегать:
+					</h1>
+					<p class="bad_prof_par">
+						Вам следует избегать профессий, требующих детальной и скрупулезной работы, а также жесткой дисциплины и соблюдения строгой иерархии. Работа, которая не приносит новые и свежие впечатление также вряд ли вас порадует.
+
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="prof_range">
+						<ul class="prof_range_ul">
+							<li>
+								<a href="#">
+									Зубной врач
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Медсестра/Медбрат
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Окулист
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Ассистент библиотекаря
+								</a>
+							</li>				
+						</ul>					
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="prof_range">
+						<ul class="prof_range_ul">
+							<li>
+								<a href="#">
+									Супервайзер
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Машинист
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Пилот самолета  
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Аналитик данных 
+								</a>
+							</li>				
+						</ul>					
+					</div>
+				</div>		
+			</div>
+		</div>	
+	</section>
+	<section class="section4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="bad_prof_title">
+						Понравился наш тест?
+					</h1>
+					<p class="bad_prof_par">
+						Понравился ли вам результат? Насколько точный он был? Своим отзывом вы помогаете нашей команде совершенствоваться ради вас :) 
+					</p>
+				</div>			
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/happy.png" alt="" class="smile">
+				</div>
+				<div class="col-md-6">
+					<img src="img/angry.png" alt="" class="smile">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>
+						ИНФОРМАЦИЯ
+					</h4>
+					<p class="footer_about">
+						Growthix - это уникальная платформа, с помощью которой вы сможете ознакомиться с различными профессиями, специальностями, вузами, пройти бесплатный профориентационный тест, а также получить практические задания от различных компаний.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4>
+						НАВИГАЦИЯ
+					</h4>
+					<div class="d-flex">
+						<div>
+							<ul  class="footer_menu">
+								<li>
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Услуги</a>
+								</li>
+								<li>
+									<a href="#">Ответы</a>
+								</li>
+								<li>
+									<a href="#">О компаниях</a>
+								</li>
+							</ul>
+						</div>	
+						<div class="without_h">
+							<ul  class="footer_menu">
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Помощь</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</div>	
+					</div>				
+				</div>
+				<div class="col-md-2">
+					<h4>
+						КОНТАКТЫ
+					</h4>
+					<div>
+						<div>
+							<h5>Телефон :</h5>
+							<p class="contacts">+7(707)770-70-70</p>
+						</div>
+						<div>
+							<h5>Email :</h5>
+							<p class="contacts">growthix@company.com</p>
+						</div>
+						<div>
+							<h5>Адрес :</h5>
+							<p class="contacts">Номер улицы, номер дома, номер квартиры</p>
+						</div>
+					</div>						
+				</div>
+				<div class="col-md-3 div_form">
+					<div>
+						<form action="" class="form" method="POST">
+							<input type="text" placeholder="Ваше имя" class="inp">
+							<input type="text" placeholder="Ваш Email" class="inp">
+							<textarea  cols="21" rows="3" placeholder="Сообщение" class="text_area"></textarea>
+							<button type="submit" class="form_button btn btn-primary">Связаться с нами</button>
+						</form>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">Copyright@2018 Growthix Corporation</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<script src="js/bg.js"></script>
+<script src="js/headhesive.min.js"></script>
+<script src="js/header_scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/*----------------------*/
+
+.header {
+	background: url(../img/bw.jpg);
+	height: 380px;
+  width: 100%;
+	background-size: cover;
+}
+
+.header_content{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(93, 4, 33, 0.6);
+}
+
+.header_menu{
+	height: 60px;
+	padding-top: 45px;
+	width: 100%;
+  background-color: none;
+  z-index: 999;
+	transition: all 0.4s ease;
+}
+
+.nav {
+	padding-left: 40px;
+}
+
+.logo {
+	color: white;
+	font-size: 20px;
+}
+
+.menu li{
+	margin-left: 80px;
+	color: white;
+}
+
+.menu a {
+	display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin-top: 2px;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.menu a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin-top: 2px;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.menu a:hover::before {
+	 width: 50%;
+     left: 0;
+}
+
+.menu a:hover::after {
+	 width: 50%;
+}
+
+
+.menu a {
+	color: white;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.header_title1 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 190px;
+}
+
+.headhesive {
+  background: black;
+  padding-top: 20px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.headhesive--stick {
+  transform: translateY(0);
+}
+
+
+/*---------- Section1 ----------*/
+
+.section1 {
+  padding-bottom: 100px;
+}
+
+.section1_title {
+    font-size: 18px;
+    color: #575757;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.sec1 {
+    color: #00739e;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.question_block {
+    margin-bottom: 85px;
+}
+
+.question_title {
+    color: #575757;
+    font-size: 20px;
+    width: 870px;
+    padding-bottom: 25px;
+}
+
+.numb {
+    color: #00739e;
+}
+
+.question_numb {
+    font-size: 24px;
+    color: #00739e;
+    margin-left: 6px;
+    margin-top: 15px;
+}
+
+.section_button {
+    background-color: #00739e;
+    height: 45px;
+    width: 240px;
+    border-radius: 20px;
+    border: 1px solid #00739e;
+    color: white;
+    font-size: 18px;
+}
+
+.section_button:hover {
+    background-color: #01688f;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #00739e;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #00739e;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #00739e;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #00739e;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 1px solid #00739e;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #00739e;
+  cursor: pointer;
+}
+
+
+
+.lines, .polz, .circle {
+    position: absolute;
+    width: 100%;
+}
+
+.lines {
+    width: 100%;
+}
+
+.polz {
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.line {
+    height: 3px;
+    width: 100%; 
+    background-color: #575757;
+    margin-top: 15px;
+}
+
+.circle {
+    margin-top: -27px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #00739e;
+    border-radius: 50%;
+}
+
+.circle1 {
+    left: 287px;
+}
+
+.circle2 {
+    left: 560px;
+}
+
+.circle3 {
+    left: 833px;
+}
+
+.circle4 {
+    left: 1105px;
+}
+
+

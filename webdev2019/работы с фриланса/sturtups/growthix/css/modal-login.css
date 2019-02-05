@@ -1,0 +1,197 @@
+/*------------- Моадальное окно ----------*/
+
+.modal {
+	margin-top: 100px;
+	overflow-y: auto; 
+	overflow-y: scroll; 
+}
+
+.modal-body {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.modal-footer {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.windowM input {
+	margin-top: 30px;
+}
+
+.password_forget {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.btn {
+	border-radius: 0px;
+	height: 40px;
+}
+
+.login {
+	background-color: #141448;
+	color: white;
+	margin-bottom: 25px;
+}
+
+.regin {
+	background-color: #141448;
+	color: white;
+	margin-bottom: 25px;
+	margin-top: 60px;	
+}
+
+.login:hover {
+	color: white;
+	background-color: #10113b;
+}
+
+.regin:hover {
+	color: white;
+	background-color: #10113b;
+}
+
+.sign_in {
+	text-align: center;
+}
+
+.facebook {
+	background: url(../img/facebook.png) no-repeat #337ab7;
+	background-position: 10px center;
+	width: 33%;
+	background-size: 8%;
+}
+
+.vk {
+	background: url(../img/vk.png) no-repeat #5bc0de;
+	background-position: 10px center;
+	width: 33%;
+	background-size: 15%;
+}
+
+.google {
+	background: url(../img/google.png) no-repeat #d9534f;
+	background-position: 10px center;
+	width: 33%;
+	background-size: 18%;
+}
+
+.btn p {
+	margin: 0 auto;
+	padding-left: 18px;
+}
+
+.header_title {
+	margin-left: 50px;
+	margin-top: 12px;
+	font-size: 18px;
+}
+
+.password_upper_par {
+	margin-left: 50px;
+	margin-top: 12px;
+	font-size: 18px;
+}
+
+.password_under_par {
+	color: #858585;
+	font-size: 12px;
+	margin: 20px 0px 40px 1px;
+}
+
+.password {
+	height: 45px;
+	font-size: 18px;
+	border-radius: 0px;
+}
+
+/*--------- Footer --------*/
+
+.footer {
+    background-color: black;
+    height: 450px;
+    padding-top: 80px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.footer_about {
+    line-height: 1.6;
+    width: 91%;
+    color: #7f7f7d;
+    font-size: 14px;
+}
+
+.footer_menu li a {
+    color: white;
+    font-size: 14px;
+    color: #7f7f7d;
+}
+
+.footer_menu li{
+    margin-bottom: 10px;
+}
+
+.footer_menu li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.without_h {
+    margin-left: 45px;
+}
+
+h5 {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.contacts {
+    color: #7f7f7d;
+    font-size: 14px;    
+}
+
+/*------- Form ----------*/
+
+.div_form {
+    padding-left: 60px;
+}
+
+.inp {
+    width: 240px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    font-color: #cccccc;
+}
+
+.text_area {
+    width: 240px;
+    height: 80px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.form_button {
+    border-radius: 5px;
+    font-weight: bold;
+    width: 240px;
+    height: 40px;
+}
+
+.copyright {
+    margin-top: 25px;
+    text-align: center;
+}
+
+

@@ -1,0 +1,227 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/*----------------------*/
+
+.header {
+	background: url(../img/bw.jpg);
+	height: 380px;
+  width: 100%;
+	background-size: cover;
+}
+
+.header_content{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(93, 4, 33, 0.6);
+}
+
+.header_menu{
+	height: 60px;
+	padding-top: 45px;
+	width: 100%;
+  background-color: none;
+  z-index: 999;
+	transition: all 0.4s ease;
+}
+
+.nav {
+	padding-left: 40px;
+}
+
+.logo {
+	color: white;
+	font-size: 20px;
+}
+
+.menu li{
+	margin-left: 80px;
+	color: white;
+}
+
+.menu a {
+	display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin-top: 2px;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.menu a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin-top: 2px;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.menu a:hover::before {
+	 width: 50%;
+     left: 0;
+}
+
+.menu a:hover::after {
+	 width: 50%;
+}
+
+
+.menu a {
+	color: white;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.header_title1 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 190px;
+}
+
+.headhesive {
+  background: black;
+  padding-top: 20px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.headhesive--stick {
+  transform: translateY(0);
+}
+
+
+/*---------- Section1 ----------*/
+
+.section1{
+  padding-top: 150px;
+}
+
+.source_img {
+  height: 90%;
+}
+
+.prof_block {
+  margin-top: 100px;
+}
+
+
+.prof_title {
+  color: #0092a5;
+  font-size: 30px;
+  text-align: center;
+}
+
+.prof_par {
+  color: #505050;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.aboutProf_par {
+  color: #505050;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+/* ----------- Section2 -------------*/
+
+.section2 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.prof_block1 {
+  margin-top: 150px;
+}
+
+.prof_range_ul {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.prof_range_ul a {
+  color: #505050;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.prof_range_ul li {
+  margin-bottom: 25px;
+}
+
+.prof_range_ul a:hover {
+  color: #0092a5;
+  text-decoration: none;
+}
+
+/* -------- Section3 ----------*/
+
+.section3 {
+  margin-top: 150px;
+}
+
+.bad_prof_title {
+  color: #0092a5;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.bad_prof_par {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #505050;
+  padding-bottom: 55px;
+}
+
+/* ----------- Section4 -----------*/
+
+.section4 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.smile {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Profile</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/modal-login.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header_menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 logo">Growthix</div>
+					<div class="col-md-7">
+						<div class="nav">
+							<ul class="menu d-flex">
+								<li>
+									<a href="index.html">
+										ГЛАВНАЯ
+									</a>
+								</li>
+								<li>
+									<a href="companies.html">
+										О КОМПАНИЯХ
+									</a>
+								</li>
+								<li>
+									<a href="test1.html">
+										ТЕСТ
+									</a>
+								</li>
+								<li>
+									<a href="#" data-target="#loginModal" data-toggle="modal">
+										ВОЙТИ
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					<div class="modal fade" id="loginModal" tabindex="-1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title">Вход</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control" placeholder="Логин">
+										<input type="text" class="form-control" placeholder="Пароль">
+										<p class="password_forget pull-right"><a href="#" data-dismiss="modal" data-target="#PasswordModal" data-toggle="modal">Забыли пароль?</a></p>
+										<button type="submit" class="btn login form-control">Войти</button>
+										<p class="sign_in">или<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModalReg"> зарегистрируйтесь</a></p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary facebook">Facebook</button>
+									<button type="button" class="btn btn-info vk"><p>Вконтакте</p></button>
+									<button type="button" class="btn btn-danger google"><p>Google+</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="loginModalReg">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="header_title">Регистрация</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<form action="#">
+											<input type="text"
+											class="form-control" placeholder="Логин">
+											<input type="text" class="form-control" placeholder="Пароль">
+											<input type="text" class="form-control" placeholder="Подтвердите пароль">
+											<button type="submit" class="btn regin form-control">Зарегистрироваться</button>
+											<p class="sign_in">или<a href="#" data-dismiss="modal" data-target="#loginModal" data-toggle="modal"> войти</a></p>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary facebook">Facebook</button>
+									<button type="button" class="btn btn-info vk"><p>Вконтакте</p></button>
+									<button type="button" class="btn btn-danger google"><p>Google+</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="PasswordModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="password_upper_par">Забыли пароль</p>
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form windowM">
+										<input type="text"
+										class="form-control password" placeholder="Ваш e-mail">
+										<p class="password_under_par">Ссылка для восстановления будет отправлена на вашу электронную почту</p>
+										<button type="submit" class="btn login form-control">Отправить ссылку</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</header>
+	<section class="section1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 img_block">
+					<img src="img/profile.png" class="company_img">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Чоколайф</h1>
+					<p class="underTitle">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section2">
+		<div class="container">
+			<div class="row tab-wrapper" id="tab-wrapper">
+				<div class="col-md-4">
+					<div id="tabID">
+						<p class="tab_title tab active">Деятельность</p>
+						<div class="underLine"></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div id="tabID">
+						<p class="tab_title tab">Сотрудники</p>
+						<div class="underLine"></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div id="tabID">
+						<p class="tab_title tab">Бизнес - Кейсы</p>
+						<div class="underLine"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tab_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="profile_block_img1"></div>
+					<p class="profile_par1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="profile_block_img2"></div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<p class="profile_par2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tab_content">
+		<div class="container">
+			<div class="row staff_block">
+				<div class="col-md-5">
+					<div class="staff_img_block"></div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<div>
+						<p class="staff_title">Павел | Экономист</p>
+						<p class="staff_par">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row staff_block">
+				<div class="col-md-5">
+					<div class="staff_img_block"></div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<div>
+						<p class="staff_title">Павел | Экономист</p>
+						<p class="staff_par">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row staff_block">
+				<div class="col-md-5">
+					<div class="staff_img_block"></div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<div>
+						<p class="staff_title">Павел | Экономист</p>
+						<p class="staff_par">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tab_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="profile_block_img1"></div>
+					<p class="profile_par1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="profile_block_img2"></div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<p class="profile_par2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>
+						ИНФОРМАЦИЯ
+					</h4>
+					<p class="footer_about">
+						Growthix - это уникальная платформа, с помощью которой вы сможете ознакомиться с различными профессиями, специальностями, вузами, пройти бесплатный профориентационный тест, а также получить практические задания от различных компаний.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4>
+						НАВИГАЦИЯ
+					</h4>
+					<div class="d-flex">
+						<div>
+							<ul  class="footer_menu">
+								<li>
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Услуги</a>
+								</li>
+								<li>
+									<a href="#">Ответы</a>
+								</li>
+								<li>
+									<a href="#">О компаниях</a>
+								</li>
+							</ul>
+						</div>	
+						<div class="without_h">
+							<ul  class="footer_menu">
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Помощь</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</div>	
+					</div>				
+				</div>
+				<div class="col-md-2">
+					<h4>
+						КОНТАКТЫ
+					</h4>
+					<div>
+						<div>
+							<h5>Телефон :</h5>
+							<p class="contacts">+7(707)770-70-70</p>
+						</div>
+						<div>
+							<h5>Email :</h5>
+							<p class="contacts">growthix@company.com</p>
+						</div>
+						<div>
+							<h5>Адрес :</h5>
+							<p class="contacts">Номер улицы, номер дома, номер квартиры</p>
+						</div>
+					</div>						
+				</div>
+				<div class="col-md-3 div_form">
+					<div>
+						<form action="" class="form" method="POST">
+							<input type="text" placeholder="Ваше имя" class="inp">
+							<input type="text" placeholder="Ваш Email" class="inp">
+							<textarea  cols="21" rows="3" placeholder="Сообщение" class="text_area"></textarea>
+							<button type="submit" class="form_button btn btn-primary">Связаться с нами</button>
+						</form>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">Copyright@2018 Growthix Corporation</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="js/tabs_profile.js"></script>
+</body>
+</html>

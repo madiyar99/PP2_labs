@@ -1,0 +1,432 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/*----------------------*/
+
+.header {
+	background: url(../img/bw.jpg);
+	height: 700px;
+	background-size: cover;
+}
+
+.header_content{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(93, 4, 33, 0.6);
+}
+
+.header_menu{
+	height: 80px;
+	padding-top: 45px;
+	width: 100%;
+	z-index: 999;
+}
+
+.nav {
+	padding-left: 40px;
+}
+
+.logo {
+	color: white;
+	font-size: 20px;
+	margin-top: -5px;
+}
+
+.menu li{
+	margin-left: 80px;
+	color: white;
+}
+
+.menu a {
+	display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin-top: 2px;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.menu a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin-top: 2px;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.menu a:hover::before {
+	 width: 50%;
+     left: 0;
+}
+
+.menu a:hover::after {
+	 width: 50%;
+}
+
+
+.menu a {
+	color: white;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.headhesive {
+	background: black;
+	padding-top: 20px;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	transform: translateY(-100%);
+	transition: 0.5s;
+}
+
+.headhesive--stick {
+	transform: translateY(0);
+}
+
+/*------ Under Header -------*/
+
+.underHeader {
+	padding-top: 350px;
+}
+
+.line {
+	width: 80px;
+	height: 2px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+h1, h2 {
+	text-align: center;
+	color: white;
+}
+
+.growthix {
+	font-size: 30px;
+}
+
+.line{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.underGrowthix {
+	font-size: 24px;
+}
+
+.more{
+	font-size: 22px;
+	font-weight: 100;
+	color: white;
+	background-color: transparent;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 20px;
+	border: 1px solid white;
+	width: 250px;
+	height: 45px;
+}
+
+.more:hover{
+	background-color: #0275d8;
+	border: #0275d8;
+}
+
+/*----------- Section1 -------------*/
+ 
+.lines {
+	margin-top: 20px;
+	height: 1px;
+	background-color: #C0C0C0;
+}
+
+h3 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.about_h {
+	color: #bb0344;
+	margin-top: 50px;
+}
+
+.textbook_block {
+	width: 60%;
+	height: 400px;
+	background: url(../img/test.jpg);
+	background-size: cover;
+	filter: grayscale(100%);
+}
+
+.about_par {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.start, .test_but {
+	margin-top: 25px;
+	font-weight: 700;
+	font-size: 18px;
+	width: 300px;
+	height: 50px;
+	background-color: #bb0344;
+	border: 1px solid #bb0344;
+	border-radius: 20px;
+	color: white;
+}
+
+.start:hover{
+	background-color: #ab053f;
+	border-color: #ab053f;
+	color: white;
+}
+
+/*-------- Section 2 ---------*/
+
+.section2 {
+	padding-bottom: 35px;
+	padding-top: 35px;
+	background-color: #f7f7f7;
+}
+
+.with_us_h {
+	color: #00739e;
+	margin-left: 55px;
+}
+
+.with_us {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #777777;
+	line-height: 1.3;
+	width: 90%;
+}
+
+.icon {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.icon p {
+	color: #777777;
+	line-height: 1.2;
+}
+
+.iconAll {
+	color: #00739e;
+	width: 30%;
+	margin-bottom: 20px;
+}
+
+/*--------- Section 3 ---------*/
+
+.test_h {
+	color: #8502b6;
+	margin-top: 70px;
+}
+
+.test_but {
+	background-color: #8502b6;
+	border: 1px solid #8502b6;
+}
+
+.test_but:hover{
+	background-color: #7504a0;
+	border-color: #7504a0;
+	color: white;
+}
+
+.vertic_test {
+	margin-top: 46px;
+	margin-right: 15px;
+	margin-left: 20px;
+	background-color: #fed136;
+	width: 15px;
+	height: 70px;
+}
+
+/*---------- Section 4 --------*/
+
+
+.section4 {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background-color: #f7f7f7;
+}
+
+.partners_h {
+	color: #009e4e;
+}
+
+.partners {
+	margin-bottom: 75px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #777777;
+	line-height: 1.3;
+	width: 90%;
+}
+
+.sber{
+	height: 200px;
+	width: 250px;
+	background: url(../img/sber.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.choco{
+	height: 200px;
+	width: 200px;
+	background: url(../img/choco.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.kbtu {
+	height: 200px;
+	width: 250px;
+	background: url(../img/kbtu.jpg);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 40px;	
+}
+
+.kaspi {
+	height: 200px;
+	width: 250px;
+	background: url(../img/kaspi.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+/*--------- Footer --------*/
+
+.footer {
+	background-color: black;
+	height: 450px;
+	padding-top: 80px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 14px;
+	color: white;
+	margin-bottom: 45px;
+}
+
+.footer_about {
+	line-height: 1.6;
+	width: 91%;
+	color: #7f7f7d;
+	font-size: 14px;
+}
+
+.footer_menu li a {
+	color: white;
+	font-size: 14px;
+	color: #7f7f7d;
+}
+
+.footer_menu li{
+	margin-bottom: 10px;
+}
+
+.footer_menu li a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.without_h {
+	margin-left: 45px;
+}
+
+h5 {
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.contacts {
+	color: #7f7f7d;
+	font-size: 14px;	
+}
+
+/*------- Form ----------*/
+
+.div_form {
+	padding-left: 60px;
+}
+
+.inp {
+	width: 240px;
+	height: 40px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	font-color: #cccccc;
+}
+
+.text_area {
+	width: 240px;
+	height: 80px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.form_button {
+	border-radius: 5px;
+	font-weight: bold;
+	width: 240px;
+	height: 40px;
+}
+
+.copyright {
+	margin-top: 25px;
+	text-align: center;
+}
+
