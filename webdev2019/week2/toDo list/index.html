@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toDO list</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header_block">
+						<h1 class="logo">
+							ToDo List
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="main_block">
+						<h2 class="toDo">
+							ToDo List
+						</h2>
+						<div class="form_block">
+							<form action="#">
+								<input type="text" placeholder="New Task" class="form_input" id="form_input">
+								<button type="submit" class="form_btn" onclick="create_div();">Add</button>
+							</form>	
+							<p class="counter" id="counter">1</p>			
+						</div>
+					</div>
+
+					<div class="content_block main_block" id="content_block">
+						<div class="line"></div>
+						<div class="note_block" id="note_block"><div class="left_side"><input type="checkbox" class="checkbox" id="ch" onclick="done_note();"><p class="note_title" id="par">madik</p>
+							</div><div class="right_side d-flex"><p class="date_title">date</p>
+								<a href="#" onclick="delete_div();">
+									<i class="fas fa-trash-alt"></i>
+								</a>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>

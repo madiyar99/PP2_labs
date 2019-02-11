@@ -1,0 +1,130 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/*---------------- Header ----------*/
+
+header {
+	background-color: #222222;
+	height: 70px;
+	width: 100%;
+}
+
+.logo {
+	color: #8f8f8f;
+	font-size: 24px;
+	margin-top: 18px;
+}
+
+/*-------------- Section -------------*/
+
+.main_block {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.toDo {
+	font-size: 26px;
+}
+
+.form_block {
+	margin-top: 40px;
+}
+
+.form_input {
+	width: 80%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #d1d1d1;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #9999a6;
+} 
+
+input[type="text"]::-moz-placeholder {
+    color: #9999a6;
+}
+
+.form_btn {
+	height: 47px;
+	margin-bottom: 6px;
+	margin-left: 30px;
+	width: 70px;
+	background-color: #337ab7;
+	border: 1px solid #337ab7;
+	border-radius: 5px;
+	color: white;
+}
+
+.note_block {
+	height: 70px;
+	width: 100%;
+	border: 1px solid #e1e1e1;
+	border-top: none;
+	display: none;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #e1e1e1; 
+}
+
+.counter {
+	display: none;
+}
+
+.right_side {
+	width: 55%;
+}
+
+.right_side a {
+	color: red;
+	margin-left: 200px;
+	font-size: 18px;
+	margin-right: 50px;
+	width: 10%;
+}
+
+.right_side a i {
+	margin-top: 22px;
+}
+
+.note_title {
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-right: 200px;
+	width: 300px;
+}
+
+.left_side {
+	width: 50%;
+	float: left;
+}
+
+.right_side {
+	width: 50%;
+}
+
+.checkbox {
+	float: left;
+	margin: 25px 30px 0px 30px;
+	height: 17px;
+	width: 17px;
+}
+
+.date_title {
+	margin-top: 12px;
+	color: #999999;
+	font-size: 14px;
+	width: 90%;
+	float: left;
+}
